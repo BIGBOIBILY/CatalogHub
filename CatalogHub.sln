@@ -2,7 +2,58 @@
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36221.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogHub.Api", "CatalogHub.Api\CatalogHub.Api.csproj", "{02E05669-6637-423F-9865-D6D65DDEACE3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{017E2675-43BC-4194-B53B-890E8D9DD33D} = {017E2675-43BC-4194-B53B-890E8D9DD33D}
+		{B49E9F23-6B8D-4A78-93B3-2373501811E1} = {B49E9F23-6B8D-4A78-93B3-2373501811E1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogHub.Application", "CatalogHub.Application\CatalogHub.Application.csproj", "{B49E9F23-6B8D-4A78-93B3-2373501811E1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{91D92197-1765-4285-AA93-37D323850E30} = {91D92197-1765-4285-AA93-37D323850E30}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogHub.Domain", "CatalogHub.Domain\CatalogHub.Domain.csproj", "{91D92197-1765-4285-AA93-37D323850E30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogHub.Infrastructure", "CatalogHub.Infrastructure\CatalogHub.Infrastructure.csproj", "{017E2675-43BC-4194-B53B-890E8D9DD33D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B49E9F23-6B8D-4A78-93B3-2373501811E1} = {B49E9F23-6B8D-4A78-93B3-2373501811E1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatalogHub.Tests", "CatalogHub.Tests\CatalogHub.Tests.csproj", "{0397CE94-211B-491F-BA6D-0A583A423708}"
+	ProjectSection(ProjectDependencies) = postProject
+		{017E2675-43BC-4194-B53B-890E8D9DD33D} = {017E2675-43BC-4194-B53B-890E8D9DD33D}
+		{91D92197-1765-4285-AA93-37D323850E30} = {91D92197-1765-4285-AA93-37D323850E30}
+		{B49E9F23-6B8D-4A78-93B3-2373501811E1} = {B49E9F23-6B8D-4A78-93B3-2373501811E1}
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02E05669-6637-423F-9865-D6D65DDEACE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E05669-6637-423F-9865-D6D65DDEACE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E05669-6637-423F-9865-D6D65DDEACE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E05669-6637-423F-9865-D6D65DDEACE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B49E9F23-6B8D-4A78-93B3-2373501811E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B49E9F23-6B8D-4A78-93B3-2373501811E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B49E9F23-6B8D-4A78-93B3-2373501811E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B49E9F23-6B8D-4A78-93B3-2373501811E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91D92197-1765-4285-AA93-37D323850E30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91D92197-1765-4285-AA93-37D323850E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91D92197-1765-4285-AA93-37D323850E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91D92197-1765-4285-AA93-37D323850E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{017E2675-43BC-4194-B53B-890E8D9DD33D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{017E2675-43BC-4194-B53B-890E8D9DD33D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{017E2675-43BC-4194-B53B-890E8D9DD33D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{017E2675-43BC-4194-B53B-890E8D9DD33D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0397CE94-211B-491F-BA6D-0A583A423708}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0397CE94-211B-491F-BA6D-0A583A423708}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0397CE94-211B-491F-BA6D-0A583A423708}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0397CE94-211B-491F-BA6D-0A583A423708}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
